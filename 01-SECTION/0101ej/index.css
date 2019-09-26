@@ -1,0 +1,8 @@
+div {
+    box-sizing: border-box;
+    width: 20rem;
+    height: 20rem;
+    background-color: salmon;
+    padding: 5rem;
+    border: 20px solid blue;
+}
