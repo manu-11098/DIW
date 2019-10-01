@@ -16,7 +16,7 @@
 
 /**
     PASO 2:
-    Con el box-sizing: border-box el border y padding se incluye dentro del tamaño de la caja
+    Con el box-sizing: border-box el border y padding se incluyen dentro del tamaño de la caja
     Añadido el box-sizing: border-box pero solo al elemento ( en el paso 3 se añade a todos los elementos/pseudo elementos por lo que se puede eliminar de aquí)
 .box {
     box-sizing: border-box;
