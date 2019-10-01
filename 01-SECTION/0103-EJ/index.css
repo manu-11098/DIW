@@ -1,0 +1,39 @@
+
+/**
+    box-sizing: border-box a todos los elementos y pseudo elementos del html
+*/
+*, *::before, *::after, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/**
+    Para evitar los espacios que deja por defecto el navegador
+*/
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.box {
+    width: 22%;
+    height: 20rem;
+    background-color: salmon;
+    color: white;
+    float: left;
+    padding: 2rem;
+    border: 10px solid blue;
+}
+
+/**
+    Se añade a todos los "box" que no sean el último un márgen del 4%
+*/
+
+.box:not(:last-child) {
+    margin-right: 4%; 
+}
+
+/**
+    NOTA IMPORTANTE
+    En el live server de Visual Studio Code no funcionará ya que el último elemento no es el último div,
+    sino un script que introduce el live-server (ver en el debug del navegador)
+*/
