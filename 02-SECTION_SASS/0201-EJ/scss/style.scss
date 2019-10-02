@@ -1,0 +1,4 @@
+$text: blue; // Creamos una variable
+body {
+    color: $text; // Usamos la variable para asignarle un valor a la propiedad
+}

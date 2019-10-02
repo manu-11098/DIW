@@ -1,0 +1,23 @@
+.container {
+    margin: 0 auto;
+    max-width: 680px;
+    padding: 0 20px;
+    color: $title;
+}
+.box {
+    padding: 10px;
+    background-color: #E6EBE0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    .head {
+        border-bottom: 1px solid #9BC1BC;
+        padding-bottom: 10px;
+        h3 {
+            margin: 0;
+            color: #5CA4A9;
+        }
+    }
+    .cont {
+        padding-top: 10px;
+    }
+}
