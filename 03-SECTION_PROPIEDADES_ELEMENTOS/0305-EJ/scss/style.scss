@@ -1,0 +1,27 @@
+div {
+    border: 1px solid;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    /* font-size: 0; */
+}
+
+/** Segunda imagen
+    Al hacer que sea un elemento de bloque no reserva espacio para los siguientes posibles caracteres
+*/
+div:nth-child(2) img {
+    display: block; 
+}
+
+/** Tercera imagen
+    Alinea los bordes inferiores
+*/
+div:nth-child(3)  img {
+    vertical-align: bottom;
+}
+
+/** Segunda imagen
+    Pones la fuente a 0 para que no se vea el espacio que se reserva
+*/
+div:last-of-type {
+    font-size: 0;
+}
