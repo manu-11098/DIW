@@ -3,6 +3,7 @@ nav {
     text-transform: uppercase;
     color: white;
     // padding: 2em 0; // Solo para ver el menu dentro de su contenedor
+
     ul {
         display: table; // paso 1
         width: 100%; // paso 3
@@ -11,11 +12,16 @@ nav {
             display: table-cell; // paso 2
             text-align: center; // paso 4
             border: 1px solid;
+            
+            &:hover{
+                opacity: 0.8;
+            }
 
             // Resulta que los enlaces son muy poco accesibles
             a {
                 padding: 1em;
                 display: block;
+                
             }            
         }
 
