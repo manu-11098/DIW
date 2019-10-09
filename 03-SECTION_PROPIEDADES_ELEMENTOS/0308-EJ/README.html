@@ -1,0 +1,22 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h1 id="ejemplo-men-con-propiedad-hover">Ejemplo menú con propiedad :hover</h1>
+<p>En el ejemplo se muestra un menú en el que queremos que se subrayen las opciones al situarse encima con el puntero mediante <strong>:hover</strong>.</p>
+<p>Al poner solo la propiedad <strong>hover</strong> el div inferior se desplaza hacia abajo.</p>
+<p>Para solucionarlo ponemos un margen &quot;invisible&quot; y en la propiedad <strong>hover</strong> lo coloreas de naranja y se hace visible, evitando el desplazamiento del div.</p>
+<pre><code>a {
+                padding: 1em;
+                display: inline-block;
+                border-bottom: $borde transparent; // El borde siempre está pero no se ve
+                &amp;:hover{
+                    border-bottom: $borde orange; // El borde se colorea de naranja
+
+                }
+            }
+</code></pre>
+      </body>
+    </html>

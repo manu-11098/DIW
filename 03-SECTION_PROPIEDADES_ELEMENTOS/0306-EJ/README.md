@@ -1,5 +1,5 @@
 # Ejemplo de menu justificado mediante display: table
-El el ejemplo se muestra un menu de manera justificada mediante las propiedades **display: table** y **display: table-cell**
+El el ejemplo se muestra un menu de manera justificada mediante las propiedades **display: table** y **display: table-cell**.
 Ventajas: 
 - Me permite distribuir elementos de forma tabular sin la rigidez de las tablas (Puede ser responsive).
 - Puedo mostra los elementos de manera más semántica (headers, sections, articles, ...)
