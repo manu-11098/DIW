@@ -34,7 +34,7 @@ Puedes definir el tamaño que desees para el lienzo donde vas a comenzar a dise�
 
 Dispone de una serie de componentes como pueden ser botones, barras de navegación, alertas... que ya vienen construidas y a las que les puedes añadir interacciones para hacerlas funcionales.
 
-![Componentes](./sources/img/componentes.jpg)
+![Componentes](./sources/img/componentes.JPG)
 
 Estos complementos puedes cogerlos de varias librerías como _Bootstrap_.
 
