@@ -4,7 +4,11 @@ UXPin es una aplicación pensada para el diseño web que además permite simular
 Está disponible en versión de escritorio o versión del navegador.
 Posee la versión gratuita con ciertas limitaciones y varias versiones de pago, las cuales puedes hacer a medida dependiendo de los recursos que necesites para llevar a cabo tu proyecto.
 
+<center>
+
 ![Tarifas](./sources/img/prices.jpg)
+
+</center>
 
 ## Funcionalidades
 
@@ -28,21 +32,31 @@ Puedes definir el tamaño que desees para el lienzo donde vas a comenzar a dise�
     - Tamaño del lienzo.
     - Activar o desactivar la rejilla que ayuda a posicionar los elementos.
 
+<center>
+
 ![Canvas](./sources/img/canvas.jpg)
+
+</center>
 
 ### Componentes
 
 Dispone de una serie de componentes como pueden ser botones, barras de navegación, alertas... que ya vienen construidas y a las que les puedes añadir interacciones para hacerlas funcionales.
 
-![Componentes](./sources/img/componentes.JPG)
+![Componentes](./sources/img/componentes.jpg)
+
+</center>
 
 Estos complementos puedes cogerlos de varias librerías como _Bootstrap_.
 
-![Componentes_lib](./sources/img/componentes_lib.JPG)
+![Componentes_lib](./sources/img/componentes_lib.jpg)
+
+</center>
 
 Además tiene herramientas simples como puede ser, lapicero, cuadrados, círculos, iconos, texto...
 
-![Componentes_simple](./sources/img/componentes_simple.JPG)
+![Componentes_simple](./sources/img/componentes_simple.jpg)
+
+</center>
 
 ### Preview mode
 
@@ -50,4 +64,8 @@ Permite realizar una vista previa funcional del diseño que estamos realizando m
 
 Una vez que nos encontramos en la ventana de la vista previa, se nos muestra la página web, con un depurador al lado derecho en el que podemos modificar cualquier parámetro de cualquier elemento sobre la marcha, y al lado izquierdo un panel en el que se nos muestra la estructura de los elementos.
 
+<center>
+
 ![Preview](./sources/img/preview.jpg)
+
+</center>
