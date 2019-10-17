@@ -1,6 +1,8 @@
 # Elementos inline-block
+
 En el ejemplo inicialmente se muestran tres cajas con distintas dimensiones y contenido, al establecer la propiedad **display: inline-block** se alinean horizontalmente y aparentemente se desalinean verticalmente, sin embargo se están alineando por la linea base del texto(valor por defecto de la propiedad **vertical-align**).
-```
+
+``` sass
 div {
     background-color: salmon;
     color: white;
@@ -15,6 +17,7 @@ div {
 ```
 
 En las sucesivas versiones se cambia la propiedad **vertical-align** con diferetes opciones de alineamiento entre los elementos inline-block.
+
 - vertical-align: middle. Alinea los elementos por su centro geométrico.
 - vertical-align: top. Alinea los elementos por su borde superior.
 - vertical-align: bottom. Alinea los elementos por su borde inferior.

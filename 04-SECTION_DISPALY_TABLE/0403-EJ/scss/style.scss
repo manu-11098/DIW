@@ -1,0 +1,33 @@
+$borde: 3px solid;
+
+nav {
+    background-color: white;
+    text-transform: uppercase;
+    color: black;
+    border-top: 5px solid orange;
+    font-style: italic;
+
+    ul {
+        display: table; 
+        width: 100%; 
+        table-layout: fixed; 
+        li {
+            display: table-cell;
+            text-align: center;
+            
+            a {
+                padding: 1em;
+                display: inline-block;
+                border-bottom: $borde transparent; // El borde siempre está pero no se ve
+                &:hover{
+                    border-bottom: $borde orange; // El borde se colorea de naranja
+    
+                }
+            }            
+        }
+    }
+}
+main{
+    background-color: gray;
+    height: 6rem;
+}
