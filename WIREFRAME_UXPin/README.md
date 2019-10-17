@@ -38,11 +38,11 @@ Dispone de una serie de componentes como pueden ser botones, barras de navegaci�
 
 Estos complementos puedes cogerlos de varias librerías como _Bootstrap_.
 
-![Componentes_lib](./sources/img/componentes_lib.jpg)
+![Componentes_lib](./sources/img/componentes_lib.JPG)
 
 Además tiene herramientas simples como puede ser, lapicero, cuadrados, círculos, iconos, texto...
 
-![Componentes_simple](./sources/img/componentes_simple.jpg)
+![Componentes_simple](./sources/img/componentes_simple.JPG)
 
 ### Preview mode
 
