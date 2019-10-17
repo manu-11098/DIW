@@ -46,7 +46,7 @@ Además tiene herramientas simples como puede ser, lapicero, cuadrados, círculo
 
 ### Preview mode
 
-Permite realizar una vista previa funcional del diseño que estamos realizando mediante la combinación `ctrl+shift+p`
+Permite realizar una vista previa funcional del diseño que estamos realizando mediante la combinación `ctrl+shift+p`.
 
 Una vez que nos encontramos en la ventana de la vista previa, se nos muestra la página web, con un depurador al lado derecho en el que podemos modificar cualquier parámetro de cualquier elemento sobre la marcha, y al lado izquierdo un panel en el que se nos muestra la estructura de los elementos.
 
