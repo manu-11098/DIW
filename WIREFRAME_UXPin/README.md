@@ -42,7 +42,7 @@ Puedes definir el tamaño que desees para el lienzo donde vas a comenzar a dise�
 
 Dispone de una serie de componentes como pueden ser botones, barras de navegación, alertas... que ya vienen construidas y a las que les puedes añadir interacciones para hacerlas funcionales.
 
-![Componentes](./sources/img/componentes.jpg)
+![Componentes](./sources/img/componentes.JPG)
 
 </center>
 
@@ -50,7 +50,7 @@ Dispone de una serie de componentes como pueden ser botones, barras de navegaci�
 
 Estos complementos puedes cogerlos de varias librerías como _Bootstrap_.
 
-![Componentes_lib](./sources/img/componentes_lib.jpg)
+![Componentes_lib](./sources/img/componentes_lib.JPG)
 
 </center>
 
@@ -58,7 +58,7 @@ Estos complementos puedes cogerlos de varias librerías como _Bootstrap_.
 
 Además tiene herramientas simples como puede ser, lapicero, cuadrados, círculos, iconos, texto...
 
-![Componentes_simple](./sources/img/componentes_simple.jpg)
+![Componentes_simple](./sources/img/componentes_simple.JPG)
 
 </center>
 
