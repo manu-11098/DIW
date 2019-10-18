@@ -11,8 +11,8 @@ p {
     font-size: $fs;
 }
 
-// p { font-size: $fs; } Error
-// p { $fs: 14px !globar; ... } // Definición global dentro de un contexto
+// p { font-size: $fs; } Error, no se puede acceder al valor de la variable porque está dentro de otro bloque
+// p { $fs: 14px !global; ... } // Definición global dentro de un contexto (no se utiliza mucho, no tiene mucho sentido)
 
 /** 
  Los guiones medios y bajos son equivalentes
