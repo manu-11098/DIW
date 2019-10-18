@@ -13,7 +13,7 @@ Posee la versión gratuita con ciertas limitaciones y varias versiones de pago, 
 - Conversión de prototipos en papel en wireframes digitales.
 - Exportación a HTML.
 - Almacenamiento en la nube.
-- Contorl de versiones.
+- Control de versiones.
 - Permite la colaboración en tiempo real (mediante Google Docs).
 - Disponible multiplataforma (IOS, Android, Windows, macOs).
 
@@ -22,11 +22,12 @@ Posee la versión gratuita con ciertas limitaciones y varias versiones de pago, 
 ### Lienzo
 
 Puedes definir el tamaño que desees para el lienzo donde vas a comenzar a diseñar tu aplicación (10 000px de límite). Junto al lienzo hay un menú en el que puedes definir:
-    - Si quieres permitir el _scrolling_ tanto vertical como horizontal.
-    - El color del lienzo.
-    - Imagen de fondo del lienzo.
-    - Tamaño del lienzo.
-    - Activar o desactivar la rejilla que ayuda a posicionar los elementos.
+
+- Si quieres permitir el _scrolling_ tanto vertical como horizontal.
+- El color del lienzo.
+- Imagen de fondo del lienzo.
+- Tamaño del lienzo.
+- Activar o desactivar la rejilla que ayuda a posicionar los elementos.
 
 ![Canvas](./sources/img/canvas.jpg)
 
