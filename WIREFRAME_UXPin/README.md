@@ -50,4 +50,4 @@ Permite realizar una vista previa funcional del diseño que estamos realizando m
 
 Una vez que nos encontramos en la ventana de la vista previa, se nos muestra la página web, con un depurador al lado derecho en el que podemos ver cualquier propiedad aplicada a los elementos, y al lado izquierdo un panel en el que se nos muestra la estructura de los elementos.
 
-![Preview](./sources/img/preview_live.gif)
+![Preview](./sources/img/preview.gif)
