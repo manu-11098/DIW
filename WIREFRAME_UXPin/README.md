@@ -34,20 +34,20 @@ Puedes definir el tamaño que desees para el lienzo donde vas a comenzar a dise�
 
 Dispone de una serie de componentes como pueden ser botones, barras de navegación, alertas... que ya vienen construidas y a las que les puedes añadir interacciones para hacerlas funcionales.
 
-![Componentes](./sources/img/componentes.JPG)
+![Componentes](./sources/img/new_navbar.gif)
 
 Estos complementos puedes cogerlos de varias librerías como _Bootstrap_.
 
-![Componentes_lib](./sources/img/componentes_lib.JPG)
+![Componentes_lib](./sources/img/comp_lib.gif)
 
 Además tiene herramientas simples como puede ser, lapicero, cuadrados, círculos, iconos, texto...
 
-![Componentes_simple](./sources/img/componentes_simple.JPG)
+![Componentes_simple](./sources/img/basic_comp.gif)
 
 ### Preview mode
 
 Permite realizar una vista previa funcional del diseño que estamos realizando mediante la combinación `ctrl+shift+p`.
 
-Una vez que nos encontramos en la ventana de la vista previa, se nos muestra la página web, con un depurador al lado derecho en el que podemos modificar cualquier parámetro de cualquier elemento sobre la marcha, y al lado izquierdo un panel en el que se nos muestra la estructura de los elementos.
+Una vez que nos encontramos en la ventana de la vista previa, se nos muestra la página web, con un depurador al lado derecho en el que podemos ver cualquier propiedad aplicada a los elementos, y al lado izquierdo un panel en el que se nos muestra la estructura de los elementos.
 
-![Preview](./sources/img/preview.jpg)
+![Preview](./sources/img/preview_live.gif)
