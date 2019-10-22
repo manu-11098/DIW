@@ -52,28 +52,34 @@ p { font-family: $title_font_family; } // No recomendable
 /**
  Ejemplos con cadenas
  */
+
 /*
 $cadena: 'valor';
 @if ($cadena == 'valor') { } // True
 @if ($cadena) {} // True
 */
+
 /*
 $cadena1: 'Hola';
 $cadena2: ' mundo!!!!!!!!';
-$cadena3: $cadena1 + $cadena2; // Hola mundo
+$cadena3: $cadena1 + $cadena2; // Hola mundo (la suma de cadenas es la concatenación de estas
 
 div::before { content: $cadena3; }
 */
+
 /**
  Ejemplos con números
  */
+
 /*
 $numero1: 14%;
 $numero2: 2;
 $resultado: $numero1 + $numero2;
 div::before { content: $resultado; }
  */
+
 // $resultado: 14% + 2em; Error tipos incompatibles
+
 /*
 $numero1: 6em;
 $numero2: 2;
@@ -109,7 +115,7 @@ p {
 }
 
 $lista: facebook, twitter, linkedin;
-@each $i in $lista {
+@each $i in $lista { // ~ foreach
     .icon-#{$i} {
         background-image: url('#{$i}.icon');
     }

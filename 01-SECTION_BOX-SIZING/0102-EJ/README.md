@@ -1,8 +1,10 @@
 # SECTION 01: EJEMPLO 02. EJEMPLO BOX-SIZING CON 4 CAJAS
+
 Ejemplo de cuatro cajas al 25%, con borde, que no caben dentro de la línea horizontal de la página y su solución.
 
 ## HTML
-```
+
+``` HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +24,8 @@ Ejemplo de cuatro cajas al 25%, con borde, que no caben dentro de la línea hori
 ```
 
 ## CSS (CONTENT-BOX)
-```
+
+``` scss
 .box {
     width: 25%;
     height: 20rem;
@@ -35,13 +38,16 @@ Ejemplo de cuatro cajas al 25%, con borde, que no caben dentro de la línea hori
 ```
 
 ## CSS (SOLUCIÓN)
-```
+
+``` scss
 *, *::before, *::after, *:before, *:after {
     box-sizing: border-box;
 }
 ```
+
 Hacemos un reset a todos los elementos y pseudo elementos para que tenga el box-sizing correcto.
-```
+
+``` scss
 .box {
     width: 25%;
     height: 20rem;
@@ -52,10 +58,12 @@ Hacemos un reset a todos los elementos y pseudo elementos para que tenga el box-
     border: 1px solid black;
 }
 ```
+
 Ahora las 4 cajas entran en la horizontal de la página
 
 ## CSS (FINAL)
-```
+
+``` scss
 *, *::before, *::after, *:before, *:after {
     box-sizing: border-box;
 }

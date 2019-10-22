@@ -1,7 +1,10 @@
 # SECTION 01: EJEMPLO 01. Ejemplo sin border box
+
 Ejemplo en el que se ven los cambios producidos al cambiar el box-sizing de content-box a border-box.
+
 ## box-sizing: content-box
-```
+
+``` scss
 div {
     width: 20rem;
     height: 20rem;
@@ -10,10 +13,12 @@ div {
     border: 20px solid blue;
 }
 ```
+
 El tamaño del div aumenta a medida que le vas añadiendo paddin y border.
 
 ## box-sizing: border-box
-```
+
+``` scss
 div {
     box-sizing: border-box;
     width: 20rem;
@@ -23,10 +28,12 @@ div {
     border: 20px solid blue;
 }
 ```
+
 El tamaño del div se mantiene en los 20rem y el padding y el border se "recortan hacia dentro".
 
 ## HTML
-```
+
+``` HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>

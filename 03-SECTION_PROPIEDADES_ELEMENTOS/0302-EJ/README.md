@@ -4,7 +4,7 @@ En el ejemplo se muestran dos cajas que son elementos de bloque por defecto, amb
 
 Por otra parte al ser un elemento de bloque también se les puede establecer dimensiones.
 
-``` sass
+``` scss
 div {
     border: 1px solid; // Para ver sus dimensiones 
     width: 30%; // Ocupa un 30% sin embargo no permite elementos a sus lados como si ocupara todo el ancho disponible

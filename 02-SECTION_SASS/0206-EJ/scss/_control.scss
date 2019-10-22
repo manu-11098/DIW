@@ -55,7 +55,7 @@ $redes: (facebook, #3b5998), (twitter, #00aced), (gplus, #dd4b39);
 /** 
  * Version 1.0
  */
-@each $red, $color in $redes {
+@each $red, $color in $redes { // crea dos variables $red y $color que iteran sobre $redes
     .btn-#{$red} {
         @include btn;
         background: {
@@ -68,7 +68,7 @@ $redes: (facebook, #3b5998), (twitter, #00aced), (gplus, #dd4b39);
     }
 }
 
-@for $i from 1 through 12 {
+@for $i from 1 through 12 { 
     .col#{$i} {
         margin: 0 10px;
         width: (60px * $i);
@@ -76,7 +76,7 @@ $redes: (facebook, #3b5998), (twitter, #00aced), (gplus, #dd4b39);
     }
 }
 
-@for $i from 1 to 12 {
+@for $i from 1 to 12 { // no llega al 12
     .col#{$i} {
         margin: 0 10px;
         width: (60px * $i);

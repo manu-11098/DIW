@@ -4,9 +4,8 @@
     // contenido
     propiedad: valor
 }
-*/
-/**
- * Versión 1.0. Mixin simple
+
+// Versión 1.0. Mixin simple
 @mixin box {
     // Estas propiedades estan sustituidas por el mixin en el fichero _layout.scss
     padding: 10px;
@@ -17,16 +16,17 @@
  */
 
 /**
- * Versión 2.0. Mixin con parámetros
+//Versión 2.0. Mixin con parámetros
 @mixin box($radius, $bg, $space) {
     padding: ($space / 2);
     background-color: $bg;
     border-radius: $radius;
     margin-bottom: $space;
 }
- */
-/**
- * Versión: 3.0. Mixin con parámetros con valores por defecto
+*/
+
+/*
+// Versión: 3.0. Mixin con parámetros con valores por defecto
 @mixin box($radius: null, $bg: #f2f2f2, $space: 20px) {
     padding: ($space / 2);
     background-color: $bg;
@@ -35,8 +35,8 @@
 }
 */
 
-/** 
- * Versión 4.0. Mixin con estructura condicional en su interior
+
+//Versión 4.0. Mixin con estructura condicional en su interior
 
  @mixin box($radius: null, $bg: #f2f2f2, $space: 20px) {
     padding: ($space / 2);
@@ -45,11 +45,11 @@
     margin-bottom: $space;
     @if lightness($bg) < 50% {
         color: #FFF;
-    } else {
+    }@else {
         color: $text;
     }
 } 
- */
+
 
 /** 
  * Versión 5
