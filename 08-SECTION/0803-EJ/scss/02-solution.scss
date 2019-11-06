@@ -1,0 +1,31 @@
+body{
+    //Alineación horizontal
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    //Alineación vertical
+    align-items: center;
+}
+.total{
+    background-color: #ddd;
+    text-transform: uppercase;
+    width: 26rem;
+    padding: 1em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.literal{
+    font-weight: 300;
+}
+
+.amount{
+    color: #ABC111;
+    font-size: 1.5em;
+
+    .decimals{
+        font-size: 0.8em;
+    }
+}
