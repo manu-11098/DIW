@@ -1,0 +1,21 @@
+.flex-container{
+    background-color: salmon;
+    display: flex;
+    max-width: 900px;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+.flex-item{
+    font-size: 5em;
+    color: white;
+    background-color: deepskyblue;
+    border: 1px solid;
+    flex-basis: 100px;
+    text-align: center;
+}
+.stepTwo{
+    .flex-item{
+       // min-width: 200px; //* Encoge solamente hasta 100px
+        width: 200px;
+    }
+}
