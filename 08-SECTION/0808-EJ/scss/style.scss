@@ -1,0 +1,17 @@
+.flex-container{
+    padding: 1em;
+    background-color: salmon;
+    height: 900px;
+    display: flex;
+    max-width: 900px;
+    flex-direction: column; // Cambia el flex-basis y pasa de ser el ancho a ser el alto
+}
+.flex-item {
+    font-size: 5em;
+    color: white;
+    background-color: deepskyblue;
+    border: 1px solid;
+    flex-basis: 200px; // Ancho de los items
+    //flex-shrink: ; // Permite que se reduzcan los elementos
+    //width: 100px; // flex-basis siempre "manda" // Si cambias el flex-direction a column entonces si que se aplica el ancho del width
+}

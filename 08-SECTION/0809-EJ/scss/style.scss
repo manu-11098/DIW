@@ -1,0 +1,25 @@
+body{
+    font-family: sans-serif;
+    color: #777;
+    font-size: 1.5em;
+    padding: 1rem;
+}
+main{
+    max-width: 900px;
+    margin-bottom: 2em;
+    border: 1px solid blue;
+    display: flex;
+}
+.col{
+    height: 4rem;
+}
+section{
+    background-color: deepskyblue;
+    flex-grow: 7; // Hace que se repartan el espacio disponible
+    //flex-basis: 400px;
+}
+aside{
+    background-color: salmon;
+    flex-grow: 3;
+   // flex-basis: 100px;
+}
