@@ -18,18 +18,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
     background-color: rgba(189, 189, 189, 0.411);
+    flex-basis: 30em;
     
 }
 .item{
     padding: 1em;
     display: flex;
-    min-width: 300px;
-    //? flex-basis: 200px aumenta height no width
+    //min-width: 400px;
+    flex-basis: 400px;
     justify-content: space-between;
     background-color: lightgray;
     margin: 0.5em;
+
     p{
         display: inline-block;
     }
