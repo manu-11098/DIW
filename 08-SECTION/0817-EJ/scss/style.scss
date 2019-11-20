@@ -1,0 +1,75 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $blue;
+    flex-basis: 40em;
+    height: 550px;
+    border-radius: 40px;
+    
+}
+.item{
+    color: white;
+    padding: 2.2em;
+    display: flex;
+    min-width: 450px;
+    //flex-basis: 400px;
+    justify-content: space-between;
+    background-color: $blue;
+    margin: 0.5em;
+
+    /**
+    * @color = valores almacenados en el array
+    * @colors = nombre del array
+    * @index = indice para la propiedad nth-of-type()
+    */
+    @each $color in $colors{
+        
+        &:nth-of-type(#{$index}){
+            .circle{
+                background-color: $color ;
+            }
+            .next{
+                color: $color ;
+            }
+        }
+        $index: $index+1;
+    }
+    border: 1px solid transparent;
+    border-radius: 30px;
+    transition: .35s linear;
+    &:hover{
+        min-width: 475px;
+        border: 1px dashed rgba(255, 255, 255, 0.61);
+        border-radius: 30px;
+    }
+
+    .next {
+        font-size: 2em;
+        align-self: center;
+        
+    }
+
+    .e2{
+        text-align: center;
+    }
+    &>div{
+        margin: .5em;
+    }
+}
+
+
+
+@include circle;
