@@ -1,13 +1,58 @@
+@import '_variables.scss';
+body{
+    font-family: sans-serif;
+    background-color: #eaedf2;
+    font-size: .9em;
+}
 .nav-bar{
     height: 3em;
-    background: #446491;
+    background: $navbar-color;
     color: #ace6f6;
     border-bottom: 1.5px solid  #ace6f6;
+}
+main{
+    width: 90%;
+    margin: 2.8em;
+}
+.nombre-pueblo{
+    font-weight: 300;
+    font-size: 2.1em;
+}
+article{
+    background-color: white;
+    padding: .8em;
+    margin-bottom: 2em;
+}
+.intro{
+    text-align: justify;
+    margin: 1em auto;
+    width: 80%;
+}
+.table-container{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-arround;
+    max-width: 100%;
+    
+    .tabla{
+        margin: 1em;
+        width: 80%;
+        .title{
+            font-weight: bold;
+            padding-right: 5em;
+            font-size: 1em;
+        }
+        td{
+            border-bottom: 1px dotted lightgray;
+        }
+    }
+}
+.map{
+    text-align: center;
+    margin: 50px;
 
-    .title{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 2.8em;
-        text-align: center;
-
+    iframe{
+        max-width: 100%;
+        max-height: 100%;
     }
 }
