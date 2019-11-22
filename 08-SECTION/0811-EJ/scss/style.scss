@@ -1,0 +1,19 @@
+.flex-container{
+    background-color: salmon;
+    display: flex;
+    max-width: 900px;
+    padding: 1rem;
+}
+
+.flex-item{
+    font-size: 5em;
+    color: white;
+    background-color: deepskyblue;
+    border: 1px solid;
+
+    flex-basis: 150px;
+    &:nth-child(2), &:nth-child(1){
+        flex-shrink: 0;
+    }
+    
+}
