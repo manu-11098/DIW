@@ -1,4 +1,8 @@
 @mixin botones_li{
+    /**
+    * *El posicionamiento del navbar se realiza mediante display table.
+    * *Cada celda de la tabla contiene un enlace que es un elemento de una lista.
+    */
     ul{
         display: table;
         width: 100%;
@@ -76,6 +80,8 @@ input {
   border-radius: 20px;
   box-shadow: 0 1px #0091c2;
   transition: width 0.5s;
+
+  // *Modificamos estilos del placeholder
   &::placeholder{
     text-align: center;
     color: $color_fuente;
@@ -85,6 +91,9 @@ input {
 }
 
 @mixin imagenes{
+    /**
+    *   *Mediante un for formamos la url relativa a la imagen que ponemos de fondo.
+    */
     .imagenes{
         display: flex;
         justify-content: space-evenly;
@@ -95,7 +104,7 @@ input {
         width: 30%;
         height: 20em;
 
-        @for $i from 1 through 4{
+        @for $i from 1 through 4{ // @i: el valor de $i se utiliza para recorrer los elementos hijos y para formar el nombre de la imagen en la url
             &:nth-child(#{$i}){
                 background-image: url($file_path + '#{$i}' + ".jpg");
             }
