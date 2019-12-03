@@ -1,96 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+	<body>
+		<a name="top"></a>
+		<header>
+			<div class="nav-bar">
+				<ul>
+					<li><a href="#">Pueblos cercanos</a></li>
+					<li><a href="#">Fiestas</a></li>
+					<li><a href="#">Monumentos</a></li>
+					<li>
+						<input type="text" placeholder="¿Buscas algo?" size="0" required />
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main>
+			<div class="nombre-pueblo">Villamiana</div>
+			<article>
+				<div class="intro">
+					<p>
+						Villamiana es una localidad del concejo de Oviedo y perteneciente a
+						la parroquia de Limanes. Está situada a una altitud de 250m. En la
+						actualidad cuenta con una población aproximada de 323 personas y 134
+						viviendas.
+					</p>
+				</div>
+				<div class="table-container">
+					<table class="tabla">
+						<tr>
+							<td class="title">Concejo</td>
+							<td>Oviedo</td>
+						</tr>
+						<tr>
+							<td class="title">Parroquia</td>
+							<td>Limanes</td>
+						</tr>
+						<tr>
+							<td class="title">Tipo</td>
+							<td>Lugar</td>
+						</tr>
+						<tr>
+							<td class="title">Altitud</td>
+							<td>250m</td>
+						</tr>
+					</table>
 
-<body>
-    <header>
-        <div class="nav-bar">
-            <ul>
-                <li><a href="#">Pueblos cercanos</a></li>
-                <li><a href="#">Fiestas</a></li>
-                <li><a href="#">Monumentos</a></li>
-                <li><input type="text" placeholder="¿Buscas algo?" size="0" required></li>
-            </ul>
-        </div>
+					<table class="tabla">
+						<tr>
+							<td class="title">Población</td>
+							<td>323</td>
+						</tr>
+						<tr>
+							<td class="title">Hombres</td>
+							<td>158</td>
+						</tr>
+						<tr>
+							<td class="title">Mujeres</td>
+							<td>165</td>
+						</tr>
+						<tr>
+							<td class="title">Viviendas</td>
+							<td>134</td>
+						</tr>
+					</table>
+				</div>
+			</article>
 
-    </header>
-    <main>
-        <div class="nombre-pueblo">Villamiana</div>
-        <article>
-            
-            <div class="intro">
-                <p>Villamiana es una localidad del concejo de Oviedo y perteneciente a la parroquia de Limanes. Está
-                    situada a una altitud de 250m. En la actualidad cuenta con una población aproximada de 323 personas
-                    y 134 viviendas.</p>
-            </div>
-            <div class="table-container">
-                <table class="tabla">
-                    <tr>
-                        <td class="title">Concejo</td>
-                        <td>Oviedo</td>
-                    </tr>
-                    <tr>
-                        <td class="title">Parroquia</td>
-                        <td>Limanes</td>
-                    </tr>
-                    <tr>
-                        <td class="title">Tipo</td>
-                        <td>Lugar</td>
-                    </tr>
-                    <tr>
-                        <td class="title">Altitud</td>
-                        <td>250m</td>
-                    </tr>
-                </table>
-                <table class="tabla">
-                    <tr>
-                        <td class="title">Población</td>
-                        <td>323</td>
-                    </tr>
-                    <tr>
-                        <td class="title">Hombres</td>
-                        <td>158</td>
-                    </tr>
-                    <tr>
-                        <td class="title">Mujeres</td>
-                        <td>165</td>
-                    </tr>
-                    <tr>
-                        <td class="title">Viviendas</td>
-                        <td>134</td>
-                    </tr>
-                </table>
-            </div>
-        </article>
+			<article class="imagenes">
+				<div class="imagen"><div class="veil"></div></div>
+				<div class="imagen"><div class="veil"></div></div>
+				<div class="imagen"><div class="veil"></div></div>
+				<div class="imagen"><div class="veil"></div></div>
+			</article>
 
-        <article class="imagenes">
-            <div class="imagen"></div>
-            <div class="imagen"></div>
-            <div class="imagen"></div>
-            <div class="imagen"></div>
-        </article>
-            
-        <article>
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5801.110092071524!2d-5.811793022933116!3d43.36541711652887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368b7b16e49e69%3A0x13acdfeb6ba13166!2sVillam%C3%ADana%2C%20Asturias!5e0!3m2!1ses!2ses!4v1574270637187!5m2!1ses!2ses"
-                    width="600" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </div>
-        </article>
-
-    </main>
-
-    <footer>
-
-    </footer>
-</body>
-
+			<article id="article-map">
+				<div id="relleno">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+					veritatis eum nesciunt minus labore. Magni nisi culpa, similique
+					maxime maiores ipsam odio, qui voluptate et laborum, ab aliquid amet
+					exercitationem quis? Sapiente saepe illum voluptatum nisi eum culpa
+					sequi libero, nemo corporis repellendus laudantium harum mollitia,
+					totam, odit ad. Dolorem magni eaque aperiam unde ea. Reprehenderit
+					aperiam corporis, suscipit voluptatibus repudiandae nisi nemo magni
+					excepturi quas aut in, officia atque possimus. Quod dolores magnam
+					sapiente, facilis quaerat aspernatur earum dolore id ipsum sint odio
+					aperiam assumenda soluta porro. Provident dignissimos sed, officiis,
+					nesciunt atque cum magnam veniam minima fugit, eius qui ratione
+					quaerat! Aliquid maiores ullam recusandae doloremque veritatis animi,
+					dolorem tenetur eos, quo similique temporibus amet facere voluptate
+					exercitationem itaque, dolores officiis rerum! Ducimus sunt
+					consectetur tempora libero eveniet, consequatur quod non voluptates
+					nihil sapiente dolorem magni corporis vero nam adipisci totam, omnis
+					saepe ab nulla unde consequuntur laborum deserunt provident molestias?
+					Explicabo enim ex voluptate officiis velit esse voluptates adipisci
+					dolorem ipsa libero laborum odio blanditiis magnam quod quam, soluta
+					consequuntur asperiores aperiam provident id architecto et.
+					Accusantium natus culpa sit voluptatem. Exercitationem voluptatibus
+					quos ut iusto error assumenda quibusdam iure alias adipisci aperiam,
+					facilis veritatis maxime quia iste illum magnam voluptate, saepe
+					doloribus debitis? Asperiores rerum obcaecati voluptatibus modi illum
+					atque suscipit, cumque, expedita, dolor at porro nam maiores ea
+					commodi numquam alias ab mollitia assumenda est officia hic deleniti
+					animi! At eligendi rem assumenda alias harum nisi perspiciatis,
+					necessitatibus explicabo minima quae distinctio excepturi suscipit
+					deserunt.
+				</div>
+				<div class="map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5801.110092071524!2d-5.811793022933116!3d43.36541711652887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368b7b16e49e69%3A0x13acdfeb6ba13166!2sVillam%C3%ADana%2C%20Asturias!5e0!3m2!1ses!2ses!4v1574270637187!5m2!1ses!2ses"
+						width="600"
+						height="500"
+						frameborder="0"
+						style="border:0;"
+						allowfullscreen=""
+					></iframe>
+				</div>
+			</article>
+		</main>
+	</body>
 </html>

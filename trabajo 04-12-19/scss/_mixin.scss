@@ -1,113 +1,140 @@
-@mixin botones_li{
-    /**
+@mixin botones_li {
+	/**
     * *El posicionamiento del navbar se realiza mediante display table.
     * *Cada celda de la tabla contiene un enlace que es un elemento de una lista.
     */
-    ul{
-        display: table;
-        width: 100%;
-        table-layout: fixed;
+	ul {
+		display: table;
+		width: 100%;
+		table-layout: fixed;
 
-        li{
-            list-style: none;
-            display: table-cell;
-            text-align: center;
-            padding: 1em;
-            transition: 1s all ease;
-            &:nth-of-type(2){
-                border-left: 2px solid $color_fuente;
-                border-right: 2px solid $color_fuente;
-            }
-            &:nth-of-type(3){
-                border-right: 2px solid $color_fuente;
-            }
-            &:hover{
-                color: lighten($color_fuente, 20%);
-
-            }
-            a{
-                display: inline-block;
-                vertical-align: middle;
-            }
-        }
-    }
+		li {
+			list-style: none;
+			display: table-cell;
+			text-align: center;
+			padding: 1em;
+			transition: 1s all ease;
+			&:nth-of-type(2) {
+				border-left: 2px solid $color_fuente;
+				border-right: 2px solid $color_fuente;
+			}
+			&:nth-of-type(3) {
+				border-right: 2px solid $color_fuente;
+			}
+			&:hover {
+				color: lighten($color_fuente, 20%);
+			}
+			a {
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
 }
 
-@mixin tabla{
-    .table-container{
-        display: flex;
-        margin: 0 auto;
-        justify-content: space-arround;
-        width: 100%;
-        
-        .tabla{
-            margin: 1em;
-            width: 80%;
-            .title{
-                font-weight: bold;
-                padding-right: 5em;
-                font-size: 1em;
-            }
-            td{
-                border-bottom: 1px dotted lightgray;
-            }
-        }
-    }
+@mixin tabla {
+	.table-container {
+		display: flex;
+		margin: 0 auto;
+		justify-content: space-arround;
+		width: 100%;
+
+		.tabla {
+			margin: 1em;
+			width: 80%;
+			.title {
+				font-weight: bold;
+				padding-right: 5em;
+				font-size: 1em;
+			}
+			td {
+				border-bottom: 1px dotted lightgray;
+			}
+		}
+	}
 }
 
-@mixin mapa{
-    .map{
-        text-align: center;
-        margin: 50px;
-    
-        iframe{
-            max-width: 100%;
-            max-height: 100%;
-        }
-    }
+@mixin mapa {
+	.map {
+		text-align: center;
+		margin: 50px;
+
+		iframe {
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+
+	#article-map {
+		text-align: justify;
+		display: flex;
+	}
+	#relleno {
+		margin: 50px;
+		display: inline-block;
+		width: 50%;
+	}
+	@media (max-width: 1200px) {
+		#article-map {
+			flex-wrap: wrap;
+			#relleno {
+				width: 90%;
+			}
+			& > * {
+				margin: 50px auto;
+			}
+		}
+	}
 }
 
-@mixin searchBox{
-input {
-  color: $color_fuente;
-  font-size: 16px;
-  background: transparent;
-  width: 80%;
-  height: 25px;
-  padding: 10px;
-  border: solid 3px white;
-  outline: none;
-  border-radius: 20px;
-  box-shadow: 0 1px #0091c2;
-  transition: width 0.5s;
+@mixin searchBox {
+	input {
+		color: $color_fuente;
+		font-size: 16px;
+		background: transparent;
+		width: 80%;
+		height: 25px;
+		padding: 10px;
+		border: solid 3px white;
+		outline: none;
+		border-radius: 20px;
+		box-shadow: 0 1px #0091c2;
+		transition: width 0.5s;
 
-  // *Modificamos estilos del placeholder
-  &::placeholder{
-    text-align: center;
-    color: $color_fuente;
-    }
+		// *Modificamos estilos del placeholder
+		&::placeholder {
+			text-align: center;
+			color: $color_fuente;
+		}
+	}
 }
 
-}
-
-@mixin imagenes{
-    /**
+@mixin imagenes {
+	/**
     *   *Mediante un for formamos la url relativa a la imagen que ponemos de fondo.
     */
-    .imagenes{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
-    .imagen{
-        margin: 10px 0;
-        width: 30%;
-        height: 20em;
+	.imagenes {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.imagen {
+		margin: 10px 0;
+		width: 350px;
+		height: 350px;
+		border-radius: 50%;
+		transition: transform 0.6s ease;
 
-        @for $i from 1 through 4{ // @i: el valor de $i se utiliza para recorrer los elementos hijos y para formar el nombre de la imagen en la url
-            &:nth-child(#{$i}){
-                background-image: url($file_path + '#{$i}' + ".jpg");
-            }
-        }
-    }   
+		&:hover {
+			transform: scale(1.1);
+		}
+		@for $i from 1 through 4 {
+			// @i: el valor de $i se utiliza para recorrer los elementos hijos y para formar el nombre de la imagen en la url
+			&:nth-child(#{$i}) {
+				background-image: url($file_path+"#{$i}"+".jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+		}
+	}
 }
