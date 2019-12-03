@@ -1,58 +1,65 @@
 @import '_variables.scss';
-body{
-    font-family: sans-serif;
-    background-color: #eaedf2;
-    font-size: .9em;
+@import '_mixin.scss';
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: $body_bgc;
+    font-size: 1em;
 }
-.nav-bar{
-    height: 3em;
+
+.nav-bar {
     background: $navbar-color;
-    color: #ace6f6;
-    border-bottom: 1.5px solid  #ace6f6;
+    color: $color_fuente;
+    @include botones_li;
 }
-main{
+
+main {
     width: 90%;
-    margin: 2.8em;
+    margin: 2.8em auto;
 }
-.nombre-pueblo{
+
+.nombre-pueblo {
     font-weight: 300;
     font-size: 2.1em;
 }
-article{
+
+article {
     background-color: white;
     padding: .8em;
     margin-bottom: 2em;
 }
-.intro{
+
+.intro {
     text-align: justify;
     margin: 1em auto;
     width: 80%;
 }
-.table-container{
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-arround;
-    width: 100%;
-    
-    .tabla{
-        margin: 1em;
-        width: 80%;
-        .title{
-            font-weight: bold;
-            padding-right: 5em;
-            font-size: 1em;
-        }
-        td{
-            border-bottom: 1px dotted lightgray;
+
+@include tabla;
+@include mapa;
+@include searchBox;
+
+@media (max-width: 550px) {
+    ul {
+        li {
+            &:nth-last-child(1) {
+                display: none;
+            }
         }
     }
-}
-.map{
-    text-align: center;
-    margin: 50px;
 
-    iframe{
-        max-width: 100%;
-        max-height: 100%;
+    .table-container {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .tabla {
+            tr {
+                td:nth-last-child(1) {
+                    text-align: right;
+                }
+            }
+        }
+
     }
 }
