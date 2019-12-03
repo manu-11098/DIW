@@ -28,6 +28,7 @@
         }
     }
 }
+
 @mixin tabla{
     .table-container{
         display: flex;
@@ -49,6 +50,7 @@
         }
     }
 }
+
 @mixin mapa{
     .map{
         text-align: center;
@@ -60,8 +62,8 @@
         }
     }
 }
-@mixin searchBox{
 
+@mixin searchBox{
 input {
   color: $color_fuente;
   font-size: 16px;
@@ -82,3 +84,21 @@ input {
 
 }
 
+@mixin imagenes{
+    .imagenes{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .imagen{
+        margin: 10px 0;
+        width: 30%;
+        height: 20em;
+
+        @for $i from 1 through 4{
+            &:nth-child(#{$i}){
+                background-image: url($file_path + '#{$i}' + ".jpg");
+            }
+        }
+    }   
+}
