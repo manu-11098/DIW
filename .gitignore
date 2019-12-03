@@ -2,3 +2,4 @@ prepros*.config
 **/css/*.map
 **/css/*.css
 !**/css/reset.css
+.vscode/settings.json
