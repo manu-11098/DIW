@@ -1,15 +1,16 @@
 # Variables, tipos de datos y mapas
 
 Sass entiende de 7 tipos de datos:
-    - CSS
-      - String
-      - Number
-      - Colores
-    - Extendidos de Sass
-      - Boolean
-      - null
-      - Listas
-      - Maps
+
+- CSS
+  - String
+  - Number
+  - Colores
+- Extendidos de Sass
+  - Boolean
+  - null
+  - Listas
+  - Maps
 
 ## Declaraciones y uso de variables
 
