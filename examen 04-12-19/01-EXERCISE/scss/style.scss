@@ -1,0 +1,24 @@
+nav{
+    background-color: deepskyblue;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em; // *Añadido por mi cuenta, no se pide
+    ul{
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        border-spacing: 1em .5em;
+        li{
+            display: table-cell;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 1em .5em;
+            
+            a{
+                display: block;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,10 @@
+@mixin efecto($vertical, $horizontal){
+    @for $i from 1 through 5{
+        $desplazar: $i - 1;
+        .card:nth-child(#{$i}){
+            position: absolute;
+            left: $horizontal * $desplazar;
+            top: $vertical * $desplazar;
+        }
+    }
+}

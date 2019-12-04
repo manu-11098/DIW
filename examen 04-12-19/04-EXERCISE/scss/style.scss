@@ -1,0 +1,21 @@
+@import "_mixin.scss";
+
+.wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 95%;
+    width: 50%;
+    margin: 10px auto;
+    background-color: aquamarine;
+
+    .card{
+        margin: 5%;
+    }
+    .card:hover{
+        z-index: 3;
+    }
+}
+@include efecto(10%, 15%);
+

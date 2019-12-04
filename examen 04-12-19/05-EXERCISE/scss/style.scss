@@ -1,0 +1,33 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list{
+    background-color: greenyellow;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    .list-item{
+        font-size: 0;
+        border: 2px solid white;
+        width: 50%;
+        display: flex;
+        .list-item-content{
+            font-size: 1rem;
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            flex-grow: 1;
+        }
+    }
+}
+
+@media (max-width: 1000px){
+    .list-item{
+        min-width: 100%;
+    }
+}
