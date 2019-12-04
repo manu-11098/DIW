@@ -1,0 +1,15 @@
+@import "_mixins.scss";
+
+body {
+	//@include centerX;
+	@include centerXY;
+	//@include centerY;
+}
+
+.box {
+	width: 400px;
+	height: 400px;
+	background-color: deepskyblue;
+	border: 2px solid black;
+	border-radius: 50%;
+}
