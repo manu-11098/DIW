@@ -1,0 +1,11 @@
+@mixin centering-no-flex($div-name, $height) {
+	height: $height;
+	position: relative;
+
+	& > #{$div-name} {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}

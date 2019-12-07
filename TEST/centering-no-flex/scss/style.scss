@@ -1,0 +1,10 @@
+@import "_mixins.scss";
+
+body {
+	background-color: deepskyblue;
+}
+.wrapper{
+	margin: 3em;
+	background-color: salmon;
+	@include centering-no-flex(".box",30rem);
+}
