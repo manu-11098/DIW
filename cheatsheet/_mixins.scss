@@ -16,3 +16,11 @@
 	align-items: center;
 	justify-content: center;
 }
+
+@mixin img-border-delete($child) {
+	font-size: 0;
+
+	& > #{$child} {
+		font-size: 1rem;
+	}
+}
