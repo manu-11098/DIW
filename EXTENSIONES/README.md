@@ -1,16 +1,16 @@
 # EXTENSIONES ÚTILES PARA _VS CODE_
 
 1. [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2).
-    
+
     Esta extensión nos permite diferenciar facilmente los bloques de código y los parentesis gracias a que los colorea.
 
     <p align="center">
 
     <img src="./sources/img/bracketpaircolorizer.png">
-    
+
     </p>
 2. [CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek).
-    
+
     Esta extensión nos permite ver los estilos css asociados a las etiquetas sin necesidad de ir a buscarlo al archivo css simplemente poniendo el puntero sobre la propiedad mientras mantienes la tecla __control__.
 
     <p align="center">
