@@ -14,7 +14,14 @@ body {
     border-radius: 1rem;
 }
 
-.grid-item:nth-child(-2n+8),.grid-item:nth-child(8) ~ .grid-item:nth-child(-2n+15),.grid-item:nth-child(16) ~ .grid-item:nth-child(-2n+24),.grid-item:nth-child(24) ~ .grid-item:nth-child(-2n+31), .grid-item:nth-child(32) ~ .grid-item:nth-child(-2n+40),.grid-item:nth-child(40) ~ .grid-item:nth-child(-2n+47), .grid-item:nth-child(48) ~ .grid-item:nth-child(-2n+56), .grid-item:nth-child(56) ~ .grid-item:nth-child(-2n+63) {
+.grid-item:nth-child(-2n+8),
+.grid-item:nth-child(8) ~ .grid-item:nth-child(-2n+15),
+.grid-item:nth-child(16) ~ .grid-item:nth-child(-2n+24),
+.grid-item:nth-child(24) ~ .grid-item:nth-child(-2n+31),
+.grid-item:nth-child(32) ~ .grid-item:nth-child(-2n+40),
+.grid-item:nth-child(40) ~ .grid-item:nth-child(-2n+47),
+.grid-item:nth-child(48) ~ .grid-item:nth-child(-2n+56),
+.grid-item:nth-child(56) ~ .grid-item:nth-child(-2n+63) {
     background-color: black;
 }
 
