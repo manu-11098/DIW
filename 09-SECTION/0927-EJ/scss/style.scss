@@ -1,0 +1,45 @@
+body {
+	background-color: rgb(44, 44, 44);
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+
+	.container {
+		padding: 1rem;
+		height: 100vh;
+
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1rem;
+
+		.item__left {
+			color: white;
+			background-color: rgb(54, 136, 46);
+
+			mask-image: linear-gradient(to bottom, transparent 20%, black 80%);
+		}
+
+		.item__right {
+			background-color: #fff;
+			mask-image: linear-gradient(to top, transparent 20%, black 80%);
+		}
+
+		.article {
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+
+			padding: 2rem;
+			&:nth-child(2) {
+				align-items: flex-start;
+			}
+
+			.article__main {
+				max-width: 350px;
+
+				.article__title {
+					margin-bottom: 1rem;
+					font-size: 1.4em;
+				}
+			}
+		}
+	}
+}
