@@ -1,0 +1,112 @@
+body {
+	line-height: 1.5;
+	//color: white;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+h3 {
+	font-size: 2em;
+	margin-bottom: 0.5em;
+	text-transform: uppercase;
+}
+
+section {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+header {
+    z-index: 1;
+    position: relative;
+
+    nav {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+
+        .nav-control {
+            cursor: pointer;
+            height: 3rem;
+            width: 3rem;
+            display: inline-block;
+            border: 1px solid white;
+            text-align: center;
+            font-size: 1.5em;
+            line-height: 3rem;
+            transition: background-color 1s ease;
+            transition: color 1s ease;
+            transition: border-color 1s ease;
+
+            &:hover {
+                background-color: #fff;
+                border-color: rgb(107, 107, 107);
+            }
+        }
+    }
+}
+
+.character-half {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+}
+
+.character-picture {
+
+    /* Patron de fondo */
+    background-image: url(../img/pattern-light.jpg);
+    left: 0;
+}
+
+.character-description {
+    background-color: #429997;
+    // right: 0; es equivalente a left: 50%
+    left: 50%;
+}
+
+.description-container {
+    width: 80%;
+    
+    /* Posicionamiento de la descripción */
+    position: absolute;
+    margin-left: 10%;
+    top: 50%;
+    transform: translate(50vw, -50%);
+
+    &.displayed {
+        transform: translate(0, -50%);
+    }
+}
+
+.picture-container {
+    height: 100%;
+    width: 100%;
+
+    /* Posicionamiento de fondo */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100vh);
+
+    /* Propiedades del background */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+
+    /* Imagenes */
+    @for $var from 1 through 4 {
+        &.picture-#{$var} {
+            background-image: url(../img/character-#{$var}.svg);
+        }
+    }
+
+    &.displayed {
+        transform: translateY(0);
+    }
+}
+
