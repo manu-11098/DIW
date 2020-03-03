@@ -8,9 +8,7 @@
     line-height: 20rem;
     font-size: 2rem;
 }
-
-/**
- *  
+ 
 .box {
     transform: translateX(200px);
     transform: translateX(-200px);
@@ -18,20 +16,13 @@
     transform: translateY(-200px);
     transform: translate(100px, 100px);    
 }
- */
 
-
- /**
-  *
 
 .box {
     transform: skew(20deg);
     transform: skew(-20deg);    
 }
- */
 
-/**
- *
 
 .box {
     transform-origin: top left;
@@ -39,18 +30,13 @@
     transform: translateX(50);
     // z-index: -1;
 }
-  */
 
-/**
- *
+
 .box {
     transform: scale(1.5); // No tengo que cambiar el lineheigth
     transform: scale(0.5);
 }
- */
 
-/**
- *
 
 .box {
     transition: all 5s ease-in-out;
@@ -58,10 +44,8 @@
         background-color: lime;
     }
 }
- */
 
-/**
- *
+
 
 .box {
     transition: color 1s ease-in-out, background-color 2s ease;
@@ -70,11 +54,8 @@
         background-color: salmon;
     }
 } 
- */
  
 
-/**
- * 
 
 .box {
     transition: transform 3s ease;
@@ -83,9 +64,8 @@
     }
 } 
 
- */
 
- /**
+
 .box {
     transition: all 2s ease, font-size 10s linear;
     &:hover {
@@ -96,4 +76,4 @@
         rotate: 720deg;
     }
 }
-*/
+

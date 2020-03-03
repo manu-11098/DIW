@@ -3,8 +3,8 @@ div {
     width: 20rem;
     background-color: coral;
     margin: 10rem auto 0;
-    animation: name duration timing-function delay iteration-count direction fill-mode;
-    animation: animacion 10s linear 1s 1 forwards;
+    //animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: animacion 3s linear 1s 2 forwards;
 }
 
 @keyframes animacion {
