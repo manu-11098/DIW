@@ -1,4 +1,12 @@
 {
     "better-comments.highlightPlainText": true,
-    "prettier.useTabs": true
+    "prettier.useTabs": true,
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.formats": [
+        {
+          "format": "expanded",
+          "extensionName": ".css",
+          "savePath": "~/../css/"
+        }
+      ]
 }
