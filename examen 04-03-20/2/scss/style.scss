@@ -1,5 +1,4 @@
 body{
-    text-align: center;
     
 }
 .grid {
@@ -21,6 +20,9 @@ body{
 }
 
 .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid white;
     background-color: #262a34;
     color: white;

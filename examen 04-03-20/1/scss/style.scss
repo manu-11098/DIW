@@ -1,45 +1,51 @@
 body {
 	height: 100vh;
-    position: relative;
+        //position: relative;
+        display: flex;
 }
 .circle {
+        align-self: center;
 	height: 20rem;
 	width: 20rem;
 	background-color: coral;
 	border: 1px solid transparent;
 	border-radius: 50%;
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-    animation: animacion 5s linear alternate infinite;
-    p{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: darkred;
-        font-size: 40px;
-    }
+	//top: 50%;
+	//transform: translateY(-50%);
+	animation: animacion 5s linear alternate infinite;
+	p {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: darkred;
+		font-size: 40px;
+	}
 }
 
 @keyframes animacion {
 	0% {
-        transform: translateX(20%);
+		//transform: translate(-50%);
 	}
 	25% {
-        transform: translateX(40%) scale(0.8) rotate(90deg);
-        background-color: skyblue;
+                transform: scale(0.8) rotate(90deg);
+                left: 20%;
+		background-color: skyblue;
 	}
 	50% {
-        transform: translateX(60%) scale(0.6) rotate(180deg);
-        background-color: darkseagreen;
+                transform: scale(0.6) rotate(180deg);
+                left: 40%;
+		background-color: darkseagreen;
 	}
 	75% {
-        transform: translateX(80%) scale(0.4) rotate(270deg);
-        background-color: orchid;
+                transform: scale(0.4) rotate(270deg);
+                left: 60%;
+		background-color: orchid;
 	}
 	100% {
-        transform: translateX(100%) scale(0.2) rotate(360deg);
-        background-color: mediumpurple;
+                transform: scale(0.2) rotate(360deg);
+                left: 80%;
+		background-color: mediumpurple;
 	}
 }
