@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* Los ficheros se nombran comenzando con "_" para que prepros
+no los tenga en cuenta a la hora de realizar la compilación*/
 .container {
   margin: 0 auto;
   max-width: 680px;
@@ -32,9 +34,6 @@ p {
   margin: 0 0 1em 0;
 }
 
-/**
- Comentario varias líneas
- */
 blockquote {
   margin: 0 0 20px 0;
 }
